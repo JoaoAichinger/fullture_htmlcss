@@ -137,3 +137,44 @@ h4{
     font-size: 16px;
     line-height: 150%;
 }
+
+@media (max-width: 1366px) and (min-width: 768px) {
+    .main {
+      flex-direction: column;
+      margin: 32px;
+    }
+  
+    .lista_produtos {
+      justify-content: center;
+      gap: 32px;
+    }
+  
+    .item {
+      width: calc(50% - 16px);
+    }
+  
+    .cart {
+      margin-top: 32px;
+    }
+  }
+  
+  /* Mobile - até 767px */
+  @media (max-width: 767px) {
+    .main {
+      flex-direction: column;
+      margin: 16px;
+    }
+  
+    .lista_produtos {
+      justify-content: center;
+      gap: 24px;
+    }
+  
+    .item {
+      width: 100%;
+    }
+  
+    .cart {
+      margin-top: 32px;
+    }
+  }
